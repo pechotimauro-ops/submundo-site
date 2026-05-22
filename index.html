@@ -53,7 +53,75 @@ color:red;
 
 /* HOME */
 
-.home{
+.home{home{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,0.8),
+rgba(0,0,0,0.9)),
+url('https://images.unsplash.com/photo-1520034475321-cbe63696469a');
+
+background-size:cover;
+background-position:center;
+padding:20px;
+}
+
+.titulo{
+font-size:70px;
+color:#ff0000;
+text-shadow:
+0 0 10px red,
+0 0 20px red,
+0 0 40px red;
+
+animation:piscar 2s infinite;
+}
+
+.subtitulo{
+font-size:22px;
+max-width:600px;
+margin-top:20px;
+color:#cccccc;
+}
+
+.botao{
+margin-top:30px;
+padding:15px 35px;
+background:red;
+color:white;
+text-decoration:none;
+font-size:20px;
+border-radius:10px;
+transition:0.3s;
+box-shadow:0 0 20px red;
+}
+
+.botao:hover{
+background:white;
+color:red;
+transform:scale(1.1);
+}
+
+@keyframes piscar{
+
+0%{
+opacity:1;
+}
+
+50%{
+opacity:0.6;
+}
+
+100%{
+opacity:1;
+}
+
+}
 height:100vh;
 background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover;
 display:flex;
