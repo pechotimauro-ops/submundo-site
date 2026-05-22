@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,53 +9,18 @@
 
 <style>
 
-.home{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-
-background:
-linear-gradient(rgba(0,0,0,0.8),
-rgba(0,0,0,0.9)),
-url('https://images.unsplash.com/photo-1520034475321-cbe63696469a');
-
-background-size:cover;
-background-position:center;
-padding:20px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
-.titulo{
-font-size:70px;
-color:#ff0000;
-text-shadow:
-0 0 10px red,
-0 0 20px red,
-0 0 40px red;
-
-animation:piscar 2s infinite;
-}
-
-.subtitulo{
-font-size:22px;
-max-width:600px;
-margin-top:20px;
-color:#cccccc;
-}
-
-.botao{
-margin-top:30px;
-padding:15px 35px;
-background:red;
+body{
+background:black;
 color:white;
-text-decoration:none;
-font-size:20px;
-border-radius:10px;
-transition:0.3s;
-box-shadow:0 0 20px red;
-
+font-family:Arial, sans-serif;
+}
 
 /* MENU */
 
@@ -63,24 +29,25 @@ position:fixed;
 top:0;
 width:100%;
 background:#111;
-padding:15px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px;
 z-index:1000;
 }
 
 .logo{
+font-size:45px;
 color:red;
-font-size:28px;
 font-weight:bold;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:10px;
-font-size:16px;
+margin-left:20px;
+font-size:20px;
+transition:0.3s;
 }
 
 nav a:hover{
@@ -89,25 +56,53 @@ color:red;
 
 /* HOME */
 
-.home{hom
+.home{
+height:100vh;
 
+background:
+linear-gradient(rgba(0,0,0,0.7),
+rgba(0,0,0,0.9)),
+url('https://images.unsplash.com/photo-1520034475321-cbe63696469a');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:20px;
 }
 
-.subtitulo{
-font-size:22px;
-max-width:600px;
+.home h1{
+font-size:80px;
+color:red;
+
+text-shadow:
+0 0 10px red,
+0 0 20px red,
+0 0 40px red;
+
+animation:piscar 2s infinite;
+}
+
+.home p{
+font-size:24px;
+max-width:700px;
 margin-top:20px;
-color:#cccccc;
+color:#ddd;
 }
 
 .botao{
 margin-top:30px;
-padding:15px 35px;
+padding:15px 40px;
 background:red;
 color:white;
 text-decoration:none;
-font-size:20px;
 border-radius:10px;
+font-size:20px;
 transition:0.3s;
 box-shadow:0 0 20px red;
 }
@@ -116,63 +111,6 @@ box-shadow:0 0 20px red;
 background:white;
 color:red;
 transform:scale(1.1);
-}
-
-@keyframes piscar{
-
-0%{
-opacity:1;
-}
-
-50%{
-opacity:0.6;
-}
-
-100%{
-opacity:1;
-}
-
-}
-height:100vh;
-background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.home-content{
-background:rgba(0,0,0,0.7);
-padding:40px;
-border-radius:20px;
-animation:aparecer 2s;
-}
-
-.home h1{
-font-size:60px;
-color:red;
-margin-bottom:20px;
-}
-
-.home p{
-font-size:22px;
-margin-bottom:20px;
-}
-
-.botao{
-display:inline-block;
-padding:15px 30px;
-background:red;
-color:white;
-text-decoration:none;
-border-radius:10px;
-transition:0.3s;
-}
-
-.botao:hover{
-background:white;
-color:black;
 }
 
 /* SEÇÕES */
@@ -182,104 +120,52 @@ padding:100px 20px;
 text-align:center;
 }
 
-h2{
-font-size:40px;
+section h2{
+font-size:60px;
 color:red;
-margin-bottom:20px;
+margin-bottom:40px;
 }
+
+/* REFLEXÕES */
 
 .card{
 background:#111;
-padding:30px;
+padding:40px;
 margin:20px auto;
 max-width:700px;
 border-radius:20px;
+font-size:28px;
 }
 
-/* GALERIA */
+/* IMAGEM */
 
-img{
+.imagem{
 width:90%;
-max-width:500px;
+max-width:900px;
+border-radius:30px;
+margin-top:40px;
+}
+
+/* CONTATO */
+
+.contato-box{
+background:#111;
+padding:50px;
+max-width:700px;
+margin:auto;
 border-radius:20px;
-margin-top:20px;
 }
 
 /* RODAPÉ */
 
 footer{
 background:#111;
-padding:30px;
+padding:40px;
 text-align:center;
+margin-top:100px;
 }
 
 /* ANIMAÇÃO */
-
-@keyframes aparecer{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-</style>home{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-
-background:
-linear-gradient(rgba(0,0,0,0.8),
-rgba(0,0,0,0.9)),
-url('https://images.unsplash.com/photo-1520034475321-cbe63696469a');
-
-background-size:cover;
-background-position:center;
-padding:20px;
-}
-
-.titulo{
-font-size:70px;
-color:#ff0000;
-text-shadow:
-0 0 10px red,
-0 0 20px red,
-0 0 40px red;
-
-animation:piscar 2s infinite;
-}
-
-.subtitulo{
-font-size:22px;
-max-width:600px;
-margin-top:20px;
-color:#cccccc;
-}
-
-.botao{
-margin-top:30px;
-padding:15px 35px;
-background:red;
-color:white;
-text-decoration:none;
-font-size:20px;
-border-radius:10px;
-transition:0.3s;
-box-shadow:0 0 20px red;
-}
-
-.botao:hover{
-background:white;
-color:red;
-transform:scale(1.1);
-}
 
 @keyframes piscar{
 
@@ -296,13 +182,20 @@ opacity:1;
 }
 
 }
+
+</style>
+
 </head>
 
 <body>
 
+<!-- MENU -->
+
 <header>
 
-<div class="logo">SUBMUNDO</div>
+<div class="logo">
+SUBMUNDO
+</div>
 
 <nav>
 <a href="#home">Home</a>
@@ -317,17 +210,16 @@ opacity:1;
 
 <section class="home" id="home">
 
-<div class="home-content">
-
 <h1>SUBMUNDO</h1>
 
-<p>Palavras emocionantes. Reflexões profundas.</p>
+<p>
+Reflexões profundas, caos, sentimentos ocultos e pensamentos da alma.
+</p>
 
-<a class="botao" href="#reflexoes">
+<a class="botao"
+href="#reflexoes">
 Entrar
 </a>
-
-</div>
 
 </section>
 
@@ -337,14 +229,10 @@ Entrar
 
 <h2>Sobre</h2>
 
-<div class="card">
-
 <p>
-O SUBMUNDO é um espaço criado para reflexões,
-emoções, pensamentos profundos e frases marcantes.
+SUBMUNDO é um espaço de pensamentos profundos,
+emoções intensas e reflexões sobre a vida.
 </p>
-
-</div>
 
 </section>
 
@@ -355,30 +243,19 @@ emoções, pensamentos profundos e frases marcantes.
 <h2>Reflexões</h2>
 
 <div class="card">
-
-<p>
-“Às vezes o silêncio grita mais do que mil palavras.”
-</p>
-
+“Às vezes o silêncio grita mais que mil palavras.”
 </div>
 
 <div class="card">
-
-<p>
 “Nem toda ferida aparece.”
-</p>
-
 </div>
 
 <div class="card">
-
-<p>
 “Quem sobrevive ao caos aprende a andar sozinho.”
-</p>
-
 </div>
 
-<img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455">
+<img class="imagem"
+src="https://images.unsplash.com/photo-1519608487953-e999c86e7455">
 
 </section>
 
@@ -388,14 +265,16 @@ emoções, pensamentos profundos e frases marcantes.
 
 <h2>Contato</h2>
 
-<div class="card">
+<div class="contato-box">
 
-<p>Fale comigo no WhatsApp</p>
+<p>
+Fale comigo no WhatsApp
+</p>
 
 <br>
 
 <a class="botao"
-href="https://wa.me/224927170864">
+href="https://wa.me/244224927170864">
 WhatsApp
 </a>
 
@@ -403,11 +282,13 @@ WhatsApp
 
 </section>
 
+<!-- RODAPÉ -->
+
 <footer>
 
-<p>Criado por Mauro - SUBMUNDO</p>
+Criado por Mauro • SUBMUNDO
 
 </footer>
 
 </body>
-</html>
+</html
