@@ -624,5 +624,32 @@ Criado por Mauro • SUBMUNDO • 2026
 
 </footer>
 
+
+<script>
+const imagens = [
+"https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=compress&cs=tinysrgb&w=1200",
+"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=compress&cs=tinysrgb&w=1200",
+"https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=compress&cs=tinysrgb&w=1200"
+];
+
+let index = 0;
+
+function carregarMais(){
+  const galeria = document.getElementById("galeria");
+
+  for(let i = 0; i < 3; i++){
+    if(index >= imagens.length) return;
+
+    let img = document.createElement("img");
+    img.src = imagens[index];
+    galeria.appendChild(img);
+
+    index++;
+  }
+}
+
+carregarMais();
+</script>
+
 </body>
 </html>
